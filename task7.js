@@ -37,10 +37,10 @@ first4.style.color="green";
 var newelement=document.createElement('div')
 console.log(newelement);
 
-newelement.className="hihi1"
-newelement.id="hihi2"
+newelement.className="hihi1";
+newelement.id="hihi2";
 
-newelement.setAttribute("h1", "hello bois")//isse attribute set ho jata hai, hello bois is value
+newelement.setAttribute("title", "hello bois")//isse attribute set ho jata hai, hello bois is value
 // ...................................................
 
 var newdivtext=document.createTextNode("hello");
@@ -51,6 +51,25 @@ var h1=document.querySelector("header h1");
 container.insertBefore(newelement, h1);
 
 console.log(newelement);
+
+// ...................................................
+var new1=document.createElement('div');
+// console.log(new1)
+var item1=document.createTextNode("Hello");
+// console.log(item1)
+new1.appendChild(item1);
+// console.log(new1);
+
+var searchclass=document.querySelector(".list-group")
+// console.log(searchclass)
+var li=document.querySelector("li");
+searchclass.insertBefore(new1, li)
+
+
+
+
+
+
 
 
 
